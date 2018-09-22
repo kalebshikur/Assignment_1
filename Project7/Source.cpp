@@ -5,12 +5,12 @@ using namespace std;
 int main() {
 	int amount;
 	int i, j = 0;
-	int bills[]{ 50,20,10,5,1 };
+	int bills[]{ 50,20,10,5,1 }; // creates array for the bills the atm can withdraw
 	int withDraw;
 	char entry;
-	do
+	do // this loop is used to give the users multiple chance to withdraw
 	{
-		while (true)
+		while (true) // This loop checks if the user is entering a valid input
 		{
 			cout << "Enter withdrawal amount: " << endl;
 			cin >> amount;
