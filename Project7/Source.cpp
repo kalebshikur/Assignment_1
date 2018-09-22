@@ -44,8 +44,10 @@ int main() {
 	// Ask if the user wants to enter another withdrawal
 				cout << "Another withdrawal?  please enter y to continue" << endl;
 				cin >> entry;
+	// if user enters anything other than 'y' the program will terminate
 				break;
 			}
 		}
-	} while (entry == 'y');
+	// check the entry of the user if the users wants to enter another withdrawal
+	} while (entry == 'y'|| entry == 'Y');
 }
