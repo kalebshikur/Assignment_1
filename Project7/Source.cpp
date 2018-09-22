@@ -24,8 +24,11 @@ int main() {
 			}
 			else
 
-	// this loops counts the amount of bills withdrawn
+	// this loops count the amount of bills withdrawn
 			{
+	/* the loops subtracts the largest bill that is smaller than the amount entered 
+	until the amount goes to zero or the amount is smaller than the bill and it will
+	go down to the next smaller bill */
 				for (i = 0; i < 5; i++)
 				{
 					j = 0;
@@ -38,6 +41,7 @@ int main() {
 						cout << j << " $" << bills[i] << " bill" << endl;
 					}
 				}
+	// Ask if the user wants to enter another withdrawal
 				cout << "Another withdrawal?  please enter y to continue" << endl;
 				cin >> entry;
 				break;
