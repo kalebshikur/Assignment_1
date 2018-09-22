@@ -14,13 +14,17 @@ int main() {
 		{
 			cout << "Enter withdrawal amount: " << endl;
 			cin >> amount;
-			if (amount > 300) {
+	// check the top limit of the entry
+			if (amount > 300) { 
 				cout << " Sorry the maximum amount you can withdral is $300" << endl;
 			}
+	// check the bottom limit of the entry
 			else if (amount < 1) {
 				cout << " Sorry the minimum amount you can withdraw if $1" << endl;
 			}
 			else
+
+	// this loops counts the amount of bills withdrawn
 			{
 				for (i = 0; i < 5; i++)
 				{
